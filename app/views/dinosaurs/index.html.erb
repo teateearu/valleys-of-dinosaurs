@@ -1,4 +1,18 @@
 <h1>Dinosaurs</h1>
+<style>
+      body {
+        font-family: "Comic Sans MS";
+      }
+      h1, h3 {
+        font-family: "Comic Sans MS";
+      }
+      h1 {
+        color: #D32F2F;
+      }
+      h3 {
+        color: #00AA86;
+      }
+    </style>
 
 <% @dinosaurs.each do |dinosaur| %>
     <p><%= link_to dinosaur.name, dinosaur_path(dinosaur.id) %></p>
